@@ -282,8 +282,8 @@ def xacdinh(dict_input: dict) -> float:
 
   if special_case:
     area_cal = dt_dat
-  print("Final result area_cal = ", area_cal)
-  print("Special case: ", special_case)
+  #print("Final result area_cal = ", area_cal)
+  #print("Special case: ", special_case)
   """ Terminal output details:(uncomment all 7 print() to see):
   array of area (Dãy các diện tích) 
   array of price (Dãy giá các mảnh đất)
