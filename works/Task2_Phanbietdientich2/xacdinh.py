@@ -124,3 +124,14 @@ def xacdinh(dict_input: dict) -> float:
     ############################
     return area_cal
 
+with open("data.json","r", encoding= 'utf-8') as f:
+    data = json.load(f)
+for k in range(150):
+    content = remove_accents(data[k]['content'])
+    #print(data[k]['id'])
+    print('content',k+2)
+    print(xacdinh(data[k]))
+
+sr3 = re.compile(r"\d*[.,]?\d+\s*-\s*\d*[.,]?\d+(?=\s*m2)")
+s = 'dien tich: 45 - 60 - 90  m2'
+print(sr3.findall(s))
